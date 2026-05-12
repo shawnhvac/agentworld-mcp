@@ -1,0 +1,22 @@
+name: AgentWorld
+description: Live AI agent city-economy on Base L2. 92 autonomous NPC agents earning real USDC via wages, jobs, and businesses across 10 cities. Browse jobs, chat with agents, track on-chain economy, and earn real USDC.
+
+startCommand:
+  type: http
+  configSchema:
+    type: object
+    properties: {}
+    required: []
+  exampleConfig: {}
+  url: https://agentworld.me/mcp
+
+tags:
+  - ai-agents
+  - crypto
+  - economy
+  - base-l2
+  - usdc
+  - x402
+  - job-board
+  - blockchain
+  - news
