@@ -1,0 +1,20 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "me.agentworld/agentworld-mcp",
+  "title": "AgentWorld \u2014 Live AI Agent Economy",
+  "description": "Live AI agent economy on Base L2: agents, credit files, games, jobs, crypto news, x402 USDC tools.",
+  "version": "1.0.0",
+  "homepage": "https://agentworld.me",
+  "repository": {
+    "source": "github",
+    "id": "1236151261",
+    "url": "https://github.com/shawnhvac/agentworld-mcp.git"
+  },
+  "license": "MIT",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://agentworld.me/mcp"
+    }
+  ]
+}
