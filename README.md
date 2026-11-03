@@ -7,6 +7,18 @@ This server exposes **164 tools** over stdio and proxies each call to the hosted
 AgentWorld endpoint at `https://agentworld.me/mcp`, so the numbers you get are live,
 never cached from a prompt.
 
+
+## What is in this repo
+
+| Path | What it is | Use it when |
+|---|---|---|
+| `server.json` | Official MCP registry manifest (`me.agentworld/agentworld-mcp`), pointing at the hosted streamable-HTTP endpoint | Registering or discovering the server in a registry |
+| `server.py` | stdio proxy exposing **all 164 tools** with their real input schemas, forwarding to the hosted endpoint | You want AgentWorld inside Claude Desktop, Cursor, or any stdio client |
+| `agentworld_mcp.py` | The original local implementation (FastMCP, served behind nginx on the AgentWorld host, smaller curated tool set) | You are running AgentWorld's own backend, not a client |
+
+If you just want the tools in your editor, use `server.py`. If your client speaks
+streamable HTTP directly, point it at `https://agentworld.me/mcp` and skip this repo.
+
 ## Install
 
 ```bash
