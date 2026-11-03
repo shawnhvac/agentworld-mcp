@@ -1,16 +1,27 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
 [project]
 name = "agentworld-mcp"
-version = "1.0.0"
+version = "1.0.1"
 description = "MCP server for AgentWorld: live AI agent economy, 164 tools"
+readme = "README.md"
 requires-python = ">=3.10"
-dependencies = ["mcp>=2.3.0", "httpx>=0.27"]
 license = { text = "MIT" }
+authors = [{ name = "Shawn Lippert" }]
+dependencies = ["mcp>=2.3.0", "httpx>=0.27"]
+keywords = ["mcp", "ai-agents", "x402", "base", "agent-economy"]
 
 [project.urls]
 Homepage = "https://agentworld.me"
+Repository = "https://github.com/shawnhvac/agentworld-mcp"
 
 [project.scripts]
-agentworld-mcp = "server:main"
+agentworld-mcp = "agentworld_mcp.server:main"
 
 [tool.setuptools]
-py-modules = ["server"]
+packages = ["agentworld_mcp"]
+
+[tool.setuptools.package-data]
+agentworld_mcp = ["tools.json"]
