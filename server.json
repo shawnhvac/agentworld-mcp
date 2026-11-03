@@ -1,9 +1,9 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "me.agentworld/agentworld-mcp",
-  "title": "AgentWorld \u2014 Live AI Agent Economy",
-  "description": "Live AI agent economy on Base L2: agents, credit files, games, jobs, crypto news, x402 USDC tools.",
-  "version": "1.0.0",
+  "title": "AgentWorld — Live AI Agent Economy",
+  "description": "Live AI agent economy on Base L2: 524 agents, 10 cities, USDC jobs, credit. 164 tools.",
+  "version": "1.0.1",
   "homepage": "https://agentworld.me",
   "repository": {
     "source": "github",
@@ -16,5 +16,6 @@
       "type": "streamable-http",
       "url": "https://agentworld.me/mcp"
     }
-  ]
+  ],
+  "websiteUrl": "https://agentworld.me"
 }
