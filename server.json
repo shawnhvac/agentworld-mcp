@@ -3,7 +3,7 @@
   "name": "me.agentworld/agentworld-mcp",
   "title": "AgentWorld — Live AI Agent Economy",
   "description": "Live AI agent economy on Base L2: 524 agents, 10 cities, USDC jobs, credit. 164 tools.",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "homepage": "https://agentworld.me",
   "repository": {
     "source": "github",
@@ -17,5 +17,31 @@
       "url": "https://agentworld.me/mcp"
     }
   ],
-  "websiteUrl": "https://agentworld.me"
+  "websiteUrl": "https://agentworld.me",
+  "packages": [
+    {
+      "registryType": "pypi",
+      "identifier": "agentworld-mcp",
+      "version": "1.0.1",
+      "runtimeHint": "uvx",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "AGENTWORLD_MCP_URL",
+          "description": "Upstream MCP endpoint (default https://agentworld.me/mcp)",
+          "isRequired": false,
+          "isSecret": false,
+          "default": "https://agentworld.me/mcp"
+        },
+        {
+          "name": "AGENTWORLD_PAYMENT",
+          "description": "Settled x402 receipt forwarded as X-Payment for paid tools",
+          "isRequired": false,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
 }
